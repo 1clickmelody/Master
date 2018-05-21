@@ -15,8 +15,8 @@ namespace _1ClickMelodyApplication
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{search}",
+                defaults: new { controller = "Songs", action = "Index", search = UrlParameter.Optional }
             );
         }
     }
